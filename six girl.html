@@ -1,0 +1,46 @@
+<!doctype html>
+	<hmtl>
+		<head>
+			<title>Learning Grid</title>
+			<style type="text/css">
+            .First{grid-area:header;}
+            .Second{grid-area:left;}
+            .Third{grid-area:center;}
+            .Fourth{grid-area:right;}
+            .Five{grid-area: footer;}
+
+
+            .grid-container{
+            	display:grid;
+                grid-template-areas: 'header header header header header header'
+
+                                      'left center center center right right'
+                                       'left footer footer footer right right';
+                                       gap: 10px;
+                                       padding: 50px;
+
+                                   }
+                                   .grid-container > div{
+                                   	background-color: yellow;
+                                   	text-align: center;
+                                   	font-size: 40px;
+                                   	padding: 15px 0px;
+                                   }
+
+
+        </style>
+		</head>
+		<body>
+			<h1>Learning Grid</h1>
+			<p>Today we have combined class and there are six girls present in that class</p>
+		</body>
+		<div class="grid-container">
+		    <div class="First">Header</div>
+		    <div class="Second">Left</div>
+		    <div class="Third">Center</div>
+		    <div class="Fourth">Right</div>
+		    <div class="Five">Footer</div>
+		</div>
+  
+	</hmtl>
+

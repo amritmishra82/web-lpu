@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style>
+		*{
+			box-sizing: border-box;
+
+		}
+		input[type= "text"], input[type= "Password"]
+			{
+			width: 400%;
+			font-size: 20px;
+			padding: 12px;
+			margin: 5px 0px 5px 0px;
+			display: inline-block;
+			border: none;
+			background: #f1f2f3;
+         }
+
+         hr{
+         	border: 2px solid black;
+         	margin-bottom: 20px;
+         }
+
+         button{
+         	font-size: 18px;
+         	font-weight: bold;
+         	background-color: rgb(15, 120, 15);
+         	color: white;
+         	padding: 10px 20px;
+         	margin: 10px 0px;
+         	border: none;
+         	cursor: pointer;
+         	width: 100%;
+         	opacity: 0.5;
+         }
+         button:hover{
+         	opacity: 1;
+
+         }
+
+         .Cancel{
+         	padding: 14px 20px;
+         	background-color: red;
+         }
+
+         .Submit{
+         	padding: 14px 20px;
+         	background-color: green;
+         }
+
+	</style>
+</head>
+<body>
+	<form>
+		<div>
+			<h1 style="background-color: lightblue;">Sign up form</h1>
+			<hr>
+			<label><b>Email</b></label>
+			<input type="text" placeholder="Enter your email">
+			
+
+
+			<label><b>Password</b></label>
+			<input type="Password" placeholder="Enter your password">
+			
+
+
+			<label><b>Re-enter</b></label>
+			<input type="Password" placeholder="Re-enter your password">
+			
+
+             
+            <label><b><input type="checkbox">Remember Me </b></label>
+
+            <p>I accept the T&C attached <a href="text"> Terms & Conditions</a></p>
+
+
+            <p class= ""></p>
+
+
+
+		</div>
+		<!-- Second divisons below for buttons -->
+		<div>
+			<button class="Cancel type="button">Cancel</button>
+			<button class="Sign up type="submit">Sign up</button>
+
+		</div>
+	</form>
+
+</body>
+</html>
