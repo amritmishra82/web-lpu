@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<form name="calculator">
+			Number1: <input type="text" name="number1">
+			<br>
+			Number2: <input type="text" name="number2">
+			<br>
+			Result:  <input type="text" name="result">
+			<br>
+			<input type="button" value="Add" onclick="addition();">
+			<input type="button" value="Sub" onclick="subtraction();">
+			<input type="button" value="Mul" onclick="multiplication();">
+			<input type="button" value="Div" onclick="division();">
+		</form>
+		<script>
+			function addition(){
+				var a = Number(document.calculator.number1.value);
+				var b = Number(document.calculator.number2.value);
+				var sum = a+b;
+				document.calculator.result.value = sum;
+
+			function subtraction(){
+				var a = Number(document.calculator.number1.value);
+				var b = Number(document.calculator.number2.value);
+				var sub = a-b;
+				document.calculator.result.value = sub;
+			}
+
+			function multiplication(){
+				var a = Number(document.calculator.number1.value);
+				var b = Number(document.calculator.number2.value);
+				var mul = a*b;
+				document.calculator.result.value = mul;
+			}
+
+			function division(){
+				var a = Number(document.calculator.number1.value);
+				var b = Number(document.calculator.number2.value);
+				var div = a/b;
+				document.calculator.result.value = div;
+			}
+		</script>
+	</body>
+	</html>

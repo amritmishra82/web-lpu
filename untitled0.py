@@ -1,24 +1,30 @@
-#slicing
-b = "Cipher Schools"
-print(b[:14])
+class Boyfriend:
+    a = "If any girl need boyfriend feel free to cantact me on: 9120596609"
+Xlass = Boyfriend()
+print(Xlass.a)
 
 
 
-c = "cipher schools"
-print(c.upper())
 
-d = "Cipher"
-print(d.replace("Cipher","Amrit"))
 
-e = "maadarchod"
-print(e.replace("maadarchod","Ambaashish lawda"))
+class Student:
+    def __init__(st, name, reg, sec, hostel, place ):
+        st.name = name
+        st.reg = reg
+        st.sec = sec
+        st.hostel = hostel
+        st.place = place
 
-#concatenation
-x = "Cipher"
-y = "Schools"
-sum = x+" "+y
-print(sum)
+obj = Student("Amrit Mishra", 12218375, "KOC31", "Boys Hostel-3", "Meeting place- Infront of 26 block")
+print(obj.name)
+print(obj.reg)
+print(obj.sec)
+print(obj.hostel)
+print(obj.place)
 
-txt = "Hii my name is \"Amrit Mishra\" and I am at LPU"
-print(txt)
+def pr(st):
+    print("Hello my name is "+st.name)
 
+
+obj = Student("Amrit", 12218375)
+obj.pr()
